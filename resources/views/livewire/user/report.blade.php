@@ -37,6 +37,7 @@
             <div class="p-3">No results found.</div>
             @endif
         </div>
+        <p class="text-xs text-gray-400 mt-1">Please choose students name to report</p>
     </div>
 
 

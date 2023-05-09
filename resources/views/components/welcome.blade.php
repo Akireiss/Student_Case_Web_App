@@ -74,6 +74,7 @@
 
               </ul>
             </div>
+            <p class="text-xs text-gray-400 mt-1">Please choose the type of violation</p>
           </div>
 
         </div>
@@ -99,7 +100,7 @@
 
 
         <div x-data="{ name: '' }">
-            <label for="input" class="text-gray-700 font-bold mb-2">Information</label>
+            <label for="input" class="text-gray-700 font-bold mb-2">Enter your name</label>
             <div class="relative">
               <input type="text" id="input" name="input" x-model="name"
                 class="w-full border-2 border-gray-200 text-black rounded-lg py-2 px-4 mb-3 leading-tight focus:outline-none focus:border-blue-500 transition-colors duration-300">
