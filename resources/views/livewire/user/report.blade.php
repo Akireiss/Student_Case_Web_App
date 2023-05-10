@@ -1,6 +1,5 @@
 <div>
         <div x-data="{ open: false, selected: '' }" class="relative">
-        <label for="input" class="text-gray-700 font-bold mb-2">Student Name:</label>
         <div class="relative">
             <input x-on:click="open = true" x-model="selected" wire:model="search" type="text" name="input" id="input"
             class="w-full border-2 border-gray-200 text-black rounded-lg py-2 px-4 mb-3 leading-tight focus:outline-none focus:border-blue-500 transition-colors duration-300"
@@ -37,7 +36,7 @@
             <div class="p-3">No results found.</div>
             @endif
         </div>
-        <p class="text-xs text-gray-400 mt-1">Please choose students name to report</p>
+
     </div>
 
 

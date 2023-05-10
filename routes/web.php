@@ -34,6 +34,12 @@ Route::get('/recent', function () {
     return view('profile.recent');
 });
 
+// Can access by the admin or teacher
+Route::get('case/view', function () {
+    return view('admin.student_case.view');
+});
+
+
 
 Route::get('redirects', 'App\Http\Controllers\LoginController@index');
 
@@ -42,12 +48,11 @@ Route::get('dashboard', function () {
         return view('admin.dashboard.dashboard');
 });
 Route::get('reports', [ReportController::class, 'index']);
+
 Route::get('case', function () {
     return view('admin.student_case.index');
 });
-Route::get('case/view', function () {
-    return view('admin.student_case.view');
-});
+
 Route::get('settings/rules', function () {
     return view('admin.settings.rules.index');
 });
@@ -64,4 +69,14 @@ Route::get('usermanagement', function () {
     return view('admin.user_management.index');
 });
 
+});
+
+
+
+
+// Staff or Advisors
+Route::prefix('staff')->middleware(['auth'])->group(function () {
+    Route::get('students', function () {
+        return view('staff.students.index');
+    });
 });

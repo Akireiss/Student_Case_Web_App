@@ -13,6 +13,7 @@
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+
         {{-- Main --}}
         <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/apple-icon.png" />
         <link rel="icon" type="image/png" href="{{ asset('assets/img/logo.png') }}"/>
@@ -34,11 +35,6 @@
         <!-- Styles -->
         @livewireStyles
 
-        <style>
-            .gradient {
-              background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
-            }
-          </style>
     </head>
 
     {{-- Night: bg-gray-100 --}}

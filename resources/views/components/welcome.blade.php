@@ -1,4 +1,7 @@
-<div class="p-6 lg:p-8 bg-white border-b border-gray-200">
+<section class="p-8">
+
+
+<div class="p-2 lg:p-12 border-b border-gray-200">
 
 
     <h1 class="mt-8 text-2xl font-medium text-gray-900">
@@ -12,7 +15,8 @@
     </p>
 </div>
 
-<div class="bg-gray-200 bg-opacity-25 grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 p-6 lg:p-8">
+
+<div class="bg-gray-100 grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 p-6  shadow-soft-2xl ">
     <div>
         {{-- <div class="flex items-center">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 stroke-gray-400">
@@ -22,11 +26,13 @@
 
             <h2 class="ml-3 text-xl font-semibold text-gray-900">
                 <a href="#">Student Name</a>
-            </h2>
-        </div> --}}
+            </h2> --}}
 
+            <label for="input" class="text-gray-700 font-bold mb-2">Student Name:</label>
  <livewire:user.report/>
 
+
+ <p class="text-xs text-gray-400 mt-1">Please choose students name to report</p>
     </div>
 
     <div>
@@ -58,15 +64,16 @@
             </div>
             <div x-show="open" x-on:click.away="open = false" class="absolute z-50 w-full mt-2 bg-white rounded-md shadow-lg">
               <ul class="max-h-60 rounded-md py-1 text-base leading-6 shadow-xs overflow-au text-black to focus:outline-none sm:text-sm sm:leading-5">
-                <li x-on:click="selected = 'Option 1'; open = false;" class="cursor-pointer text-black select-none relative py-2 pl-3 pr-9 hover:bg-gray-100 text-black">
-                    <span x-text="selected === 'Option 1' ? '✓' : ''" class="absolute inset-y-0 left-0 flex items-center pl-3 text-blue-600"></span>
+                <li x-on:click="selected = 'Bullying'; open = false;" class="cursor-pointer text-black select-none relative py-2 pl-3 pr-9 hover:bg-gray-100 text-black">
+                    <span x-text="selected !== '' ? selected : 'Select an option'" class="block truncate text-black"></span>
+
                     Bullying
                   </li>
-                  <li x-on:click="selected = 'Option 2'; open = false;" class="cursor-pointer text-black select-none relative py-2 pl-3 pr-9 hover:bg-gray-100 text-black">
+                  <li x-on:click="selected = 'Harassment'; open = false;" class="cursor-pointer text-black select-none relative py-2 pl-3 pr-9 hover:bg-gray-100 text-black">
 
                     Harassment
                   </li>
-                  <li x-on:click="selected = 'Option 3'; open = false;" class="cursor-pointer text-black select-none relative py-2 pl-3 pr-9 hover:bg-gray-100 text-black">
+                  <li x-on:click="selected = 'Cutting Classes'; open = false;" class="cursor-pointer text-black select-none relative py-2 pl-3 pr-9 hover:bg-gray-100 text-black">
                     <span x-text="selected === 'Option 3' ? '✓' : ''" class="absolute inset-y-0 left-0 flex items-center pl-3 text-blue-600"></span>
                     Cutting Classes
                   </li>
@@ -80,41 +87,13 @@
         </div>
 
 
-
-
-
-
-
-
     <div>
-        {{-- <div class="flex items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 stroke-gray-400">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 2c2.761 0 5 2.239 5 5.001 0 2.761-2.239 5-5 5-2.761 0-5-2.239-5-5.001C7 4.239 9.239 2 12 2zm0 7a2 2 0 110-4 2 2 0 010 4z" />
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21h-6a2 2 0 01-2-2v-3a3 3 0 013-3h2a3 3 0 013 3v3a2 2 0 01-2 2zM5 21h6a2 2 0 002-2v-3a3 3 0 00-3-3H7a3 3 0 00-3 3v3a2 2 0 002 2z" />
-              </svg>
 
-            <h2 class="ml-3 text-xl font-semibold text-gray-900">
-                <a href="https://tailwindcss.com/">Name</a>
-            </h2>
-        </div> --}}
-
-
-        <div x-data="{ name: '' }">
-            <label for="input" class="text-gray-700 font-bold mb-2">Enter your name</label>
-            <div class="relative">
-              <input type="text" id="input" name="input" x-model="name"
-                class="w-full border-2 border-gray-200 text-black rounded-lg py-2 px-4 mb-3 leading-tight focus:outline-none focus:border-blue-500 transition-colors duration-300">
-              <button type="button" @click="name = ''" class="absolute right-0 bottom-2 h-full px-3 text-black hover:text-gray-600">
-                <svg viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
-                  <path fill-rule="evenodd"
-                    d="M6.293 6.707a1 1 0 0 1 1.414 0L10 9.586l2.293-2.293a1 1 0 1 1 1.414 1.414L11.414 11l2.293 2.293a1 1 0 0 1-1.414 1.414L10 12.414l-2.293 2.293a1 1 0 0 1-1.414-1.414L8.586 11 6.293 8.707a1 1 0 0 1 0-1.414z"
-                    clip-rule="evenodd"></path>
-                </svg>
-              </button>
-            </div>
-            <p class="text-xs text-gray-400 mt-1">Please enter your full name.</p>
-          </div>
-
+        <div>
+            <label for="input" class="text-gray-700 font-bold mb-2">Reffered By:</label>
+     <livewire:user.report/>
+     <p class="text-xs text-gray-400 mt-1">Please choose your name</p>
+        </div>
 
 
     </div>
@@ -158,7 +137,7 @@
 </div>
 
 
-
+</section>
 
 
 

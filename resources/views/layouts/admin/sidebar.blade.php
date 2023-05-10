@@ -15,7 +15,7 @@
 
 
 
-
+        @if(auth()->check() && auth()->user()->role == 1)
         <li class=" {{ (request()->is('admin/dashboard'))  ? 'bg-green-700 w-1 ' : '' }} " >
           <a class="py-2.7 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors" href="{{ url('admin/dashboard') }}">
             <div class="shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2.5">
@@ -27,6 +27,7 @@
             <span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">Dashboard</span>
           </a>
         </li>
+        @endif
 
 
         <li class=" {{ (request()->is('admin/reports'))  ? 'bg-green-700 w-1 ' : '' }} " >
@@ -46,36 +47,58 @@
                 </g>
               </svg>
             </div>
-            <span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">Reports</span>
+            <span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">
+              @if(auth()->user()->role == 1)
+              Reports
+            @else
+            Report Student
+            @endif
+            </span>
           </a>
         </li>
 
+
+{{-- admin:1, user:0, staff: 2 --}}
+@if(auth()->check() && auth()->user()->role == 1)
         <li class=" {{ (request()->is('admin/case'))  ? 'bg-green-700 w-1 ' : '' }} " >
-          <a class="py-2.7 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors" href="{{ url('admin/case') }}">
-            <div class="shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center fill-current stroke-0 text-center xl:p-2.5">
-              <svg width="12px" height="12px" viewBox="0 0 43 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <title>credit-card</title>
-                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                  <g transform="translate(-2169.000000, -745.000000)" fill="#FFFFFF" fill-rule="nonzero">
-                    <g transform="translate(1716.000000, 291.000000)">
-                      <g transform="translate(453.000000, 454.000000)">
-                        <path class="fill-slate-800 opacity-60" d="M43,10.7482083 L43,3.58333333 C43,1.60354167 41.3964583,0 39.4166667,0 L3.58333333,0 C1.60354167,0 0,1.60354167 0,3.58333333 L0,10.7482083 L43,10.7482083 Z"></path>
-                        <path class="fill-slate-800" d="M0,16.125 L0,32.25 C0,34.2297917 1.60354167,35.8333333 3.58333333,35.8333333 L39.4166667,35.8333333 C41.3964583,35.8333333 43,34.2297917 43,32.25 L43,16.125 L0,16.125 Z M19.7083333,26.875 L7.16666667,26.875 L7.16666667,23.2916667 L19.7083333,23.2916667 L19.7083333,26.875 Z M35.8333333,26.875 L28.6666667,26.875 L28.6666667,23.2916667 L35.8333333,23.2916667 L35.8333333,26.875 Z"></path>
+@else
+<li class=" {{ (request()->is('staff/students'))  ? 'bg-green-700 w-1 ' : '' }} " >
+    @endif
+
+            @if(auth()->check() && auth()->user()->role == 1)
+            <a class="py-2.7 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors" href="{{ url('admin/students') }}">
+                @else
+            <a class="py-2.7 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors" href="{{ url('staff/students') }}">
+        @endif
+
+
+              <div class="shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center fill-current stroke-0 text-center xl:p-2.5">
+                <svg width="12px" height="12px" viewBox="0 0 43 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <title>credit-card</title>
+                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g transform="translate(-2169.000000, -745.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                      <g transform="translate(1716.000000, 291.000000)">
+                        <g transform="translate(453.000000, 454.000000)">
+                          <path class="fill-slate-800 opacity-60" d="M43,10.7482083 L43,3.58333333 C43,1.60354167 41.3964583,0 39.4166667,0 L3.58333333,0 C1.60354167,0 0,1.60354167 0,3.58333333 L0,10.7482083 L43,10.7482083 Z"></path>
+                          <path class="fill-slate-800" d="M0,16.125 L0,32.25 C0,34.2297917 1.60354167,35.8333333 3.58333333,35.8333333 L39.4166667,35.8333333 C41.3964583,35.8333333 43,34.2297917 43,32.25 L43,16.125 L0,16.125 Z M19.7083333,26.875 L7.16666667,26.875 L7.16666667,23.2916667 L19.7083333,23.2916667 L19.7083333,26.875 Z M35.8333333,26.875 L28.6666667,26.875 L28.6666667,23.2916667 L35.8333333,23.2916667 L35.8333333,26.875 Z"></path>
+                        </g>
                       </g>
                     </g>
                   </g>
-                </g>
-              </svg>
-            </div>
-            <span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">Student Case</span>
-          </a>
-        </li>
+                </svg>
+              </div>
+              <span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">Students Profile</span>
+            </a>
+          </li>
 
 
 
         <li class="w-full mt-4">
           <h6 class="pl-6 ml-2 font-bold leading-tight uppercase text-xs opacity-60">Account pages</h6>
         </li>
+
+
+
 
         <li class=" {{ (request()->is('admin/usermanagement'))  ? 'bg-green-700 w-1 ' : '' }} " >
           <a class="py-2.7 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors" href="{{ url('admin/usermanagement') }}">
@@ -98,7 +121,6 @@
             <span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">User Management</span>
           </a>
         </li>
-
 
 
         <li>
@@ -130,34 +152,46 @@
               </svg>
             </button>
 
+
+
             <div x-show="isOpen" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 transform scale-90"
             x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-200"
             x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-90" class="flex flex-col w-full md:w-auto items-start pb-1 pl-12">
-              <a href="{{ url('admin/settings/grades') }}" class="flex justify-start items-center space-x-3
+
+            @if(auth()->check() && auth()->user()->role == 1)
+            <a href="{{ url('admin/settings/grades') }}" class="flex justify-start items-center space-x-3
              text-black px-1 py-1  md:w-1 ">
                 <p class=" leading-4 text-sm">Grades</p>
               </a href>
-
+@endif
               <a href="{{ url('admin/settings/students') }}" class="flex justify-start items-center space-x-3
              text-black px-1 py-1  md:w-1">
                <p class=" leading-4 text-sm">Students</p>
             </a>
+
+            @if(auth()->check() && auth()->user()->role == 1)
               <a href="{{ url('admin/settings/rules') }}" class="flex justify-start items-center space-x-3
              text-black px-1 py-1  md:w-1">
                 <p class=" leading-4 text-sm">Regulations</p>
               </a>
-              <a href="{{ url('') }}" class="flex justify-start items-center space-x-3
-              text-black px-1 py-1  md:w-1">
-                 <p class=" leading-4 text-sm">Report</p>
-               </a>
+@endif
+
+
+@if(auth()->check() && auth()->user()->role == 1)
                <a href="{{ url('') }}" class="flex justify-start items-center space-x-3
                text-black px-1 py-1  md:w-1">
                   <p class=" leading-4 text-sm">Audit Trail</p>
                 </a>
+                @endif
+
+
+                @if(auth()->check() && auth()->user()->role == 1)
               <a href="{{ url('') }}" class="flex justify-start items-center space-x-3
              text-black px-1 py-1  md:w-1">
                 <p class=" leading-4 text-sm">Backup</p>
               </a>
+
+              @endif
             </div>
           </div>
 
