@@ -79,7 +79,9 @@
       <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
         <p class="uppercase tracking-loose w-full  ">CASTOR Z. CONCEPCION MEMORIAL NATIONAL HIGH SCHOOL</p>
         <h1 class="my-4 text-5xl font-bold leading-tight text-black ">
+            {{-- FirstC+ Commit here --}}
           Lorem ipsum dolor sit amet.
+
         </h1>
         <p class="leading-normal text-2xl mb-8 ">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, voluptatum.
