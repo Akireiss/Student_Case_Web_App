@@ -1,7 +1,8 @@
 
-@extends('layouts.admin.index')
+@extends('layouts.app')
 
 @section('content')
 
-<x-welcome />
+
+{{-- Sample Here --}}
 @endsection

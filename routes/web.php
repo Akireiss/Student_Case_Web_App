@@ -24,6 +24,7 @@ Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
     'verified'
+
 ])->group(function () {
     Route::get('/dashboard', function () {
         return view('dashboard');
@@ -76,6 +77,11 @@ Route::get('usermanagement', function () {
 
 // Staff or Advisors
 Route::prefix('staff')->middleware(['auth'])->group(function () {
+
+    Route::get('staff/dashboard', function () {
+        return view('staff.students.dashboard');
+    });
+
     Route::get('students', function () {
         return view('staff.students.index');
     });

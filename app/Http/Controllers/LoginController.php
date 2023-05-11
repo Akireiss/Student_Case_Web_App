@@ -13,7 +13,7 @@ class LoginController extends Controller
            return view('admin.dashboard.dashboard');
         }else
         {
-           return view('dashboard');
+           return view('staff.students.dashboard');
         };
    }
 }
