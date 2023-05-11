@@ -78,14 +78,14 @@
       <!--Left Col-->
       <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
         <p class="uppercase tracking-loose w-full  ">CASTOR Z. CONCEPCION MEMORIAL NATIONAL HIGH SCHOOL</p>
-        <h1 class="my-4 text-5xl font-bold leading-tight text-black ">
+        <h1 class="my-1 text-5xl font-bold leading-tight text-black ">
    {{-- Second Commit Here Again --}}
-          Lorem ipsum dolor sit amet.
+          A Happy School,
 
         </h1>
-        <p class="leading-normal text-2xl mb-8 ">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, voluptatum.
-        </p>
+        <h1 class="my-1 text-5xl font-bold leading-tight text-black ">
+     Sustaining Excellence.
+        </h1>
 
       </div>
       <!--Right Col-->
