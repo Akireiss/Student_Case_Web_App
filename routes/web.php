@@ -78,7 +78,7 @@ Route::get('usermanagement', function () {
 // Staff or Advisors
 Route::prefix('staff')->middleware(['auth'])->group(function () {
 
-    Route::get('staff/dashboard', function () {
+    Route::get('dashboard', function () {
         return view('staff.students.dashboard');
     });
 
