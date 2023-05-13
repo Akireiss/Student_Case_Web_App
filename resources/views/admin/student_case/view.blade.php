@@ -1397,4 +1397,524 @@
     </div>
 </section>
 
+
+
+<section class="p-6 mx-auto bg-blueGray-50">
+    <div class="w-full mx-auto mt-2">
+        <div
+            class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-100 border-0">
+            <div class="rounded-t bg-white mb-0 px-6 py-6 ">
+
+
+                <p class="text-xs text-blueGray-400  mt-2 mb-2 px-4 font-bold uppercase">
+                   Additional Information
+                       </p>
+                       <div class="flex flex-wrap">
+                           <div class="w-full lg:w-4/12 px-4">
+                               <div class="relative w-full mb-3">
+                                   <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                      Height
+                                   </label>
+                                   <x-input type="text" class="w-full">
+                                   </x-input>
+                               </div>
+                           </div>
+                           <div class="w-full lg:w-4/12 px-4">
+                               <div class="relative w-full mb-3">
+                                   <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                           Weight
+                                   </label>
+                                   <x-input type="text" class="w-full">
+                                   </x-input>  </div>
+                           </div>
+                           <div class="w-full lg:w-4/12 px-4">
+                               <div class="relative w-full mb-3">
+                                   <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                   BMI
+                                   </label>
+                                   <x-input type="text" class="w-full">
+                                   </x-input>  </div>
+                           </div>
+                       </div>
+
+
+
+                       <p class="text-xs text-blueGray-400  mt-2 mb-2 px-4 font-bold uppercase">
+                        Do you have a dissability?
+
+                           </p>
+                           <div class="flex flex-wrap">
+                               <div class="w-full lg:w-4/12 px-4">
+                                <div class="flex">
+                                    <div class="flex items-center h-5">
+                                        <input id="helper-checkbox" aria-describedby="helper-checkbox-text"
+                                            type="checkbox" value=""
+                                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                    </div>
+                                    <div class="ml-2 text-sm">
+                                        <label for="helper-checkbox" class="font-medium text-gray-900 ">Yes</label>
+
+                                    </div>
+                                </div>
+                               </div>
+
+                               <div class="w-full lg:w-4/12 px-4">
+                                <div class="flex">
+                                    <div class="flex items-center h-5">
+                                        <input id="helper-checkbox" aria-describedby="helper-checkbox-text"
+                                            type="checkbox" value=""
+                                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                    </div>
+                                    <div class="ml-2 text-sm">
+                                        <label for="helper-checkbox" class="font-medium text-gray-900 ">No</label>
+
+                                    </div>
+                                </div>
+                               </div>
+
+                               <div class="w-full lg:w-4/12 px-4">
+                                <div class="relative w-full mb-3">
+                                    <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                    If Yes, What it is?
+                                    </label>
+                                    <x-input type="text" class="w-full">
+                                    </x-input>  </div>
+                            </div>
+
+
+                           </div>
+
+
+
+
+                           <p class="text-xs text-blueGray-400  mt-2 mb-2 px-4 font-bold uppercase">
+                            Food Allergy
+
+                               </p>
+                               <div class="flex flex-wrap">
+                                   <div class="w-full lg:w-4/12 px-4">
+                                    <div class="flex">
+                                        <div class="flex items-center h-5">
+                                            <input id="helper-checkbox" aria-describedby="helper-checkbox-text"
+                                                type="checkbox" value=""
+                                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        </div>
+                                        <div class="ml-2 text-sm">
+                                            <label for="helper-checkbox" class="font-medium text-gray-900 ">Yes</label>
+
+                                        </div>
+                                    </div>
+                                   </div>
+
+                                   <div class="w-full lg:w-4/12 px-4">
+                                    <div class="flex">
+                                        <div class="flex items-center h-5">
+                                            <input id="helper-checkbox" aria-describedby="helper-checkbox-text"
+                                                type="checkbox" value=""
+                                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        </div>
+                                        <div class="ml-2 text-sm">
+                                            <label for="helper-checkbox" class="font-medium text-gray-900 ">No</label>
+
+                                        </div>
+                                    </div>
+                                   </div>
+
+                                   <div class="w-full lg:w-4/12 px-4">
+                                    <div class="relative w-full mb-3">
+                                        <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                        If Yes, What it is?
+                                        </label>
+                                        <x-input type="text" class="w-full">
+                                        </x-input>  </div>
+                                </div>
+
+
+                               </div>
+
+
+
+
+
+                           <p class="text-xs text-blueGray-400  mt-2 mb-2 px-4 font-bold uppercase">
+                           Medicine taken in
+
+                               </p>
+                               <div class="flex flex-wrap">
+                                <div class="w-full lg:w-4/12 px-4">
+                                    <div class="relative w-full mb-3">
+                                        <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                       1.
+                                        </label>
+                                        <x-input type="text" class="w-full">
+                                        </x-input>  </div>
+                                </div>
+
+                                   <div class="w-full lg:w-4/12 px-4">
+                                    <div class="relative w-full mb-3">
+                                        <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                       2.
+                                        </label>
+                                        <x-input type="text" class="w-full">
+                                        </x-input>  </div>
+                                </div>
+
+                                   <div class="w-full lg:w-4/12 px-4">
+                                    <div class="relative w-full mb-3">
+                                        <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                       3.
+                                        </label>
+                                        <x-input type="text" class="w-full">
+                                        </x-input>  </div>
+                                </div>
+
+
+                               </div>
+
+
+
+                               <p class="text-xs text-blueGray-400  mt-2 mb-2 px-4 font-bold uppercase">
+                                Vitamins taken in
+
+                                    </p>
+                                    <div class="flex flex-wrap">
+                                     <div class="w-full lg:w-4/12 px-4">
+                                         <div class="relative w-full mb-3">
+                                             <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                            1.
+                                             </label>
+                                             <x-input type="text" class="w-full">
+                                             </x-input>  </div>
+                                     </div>
+
+                                        <div class="w-full lg:w-4/12 px-4">
+                                         <div class="relative w-full mb-3">
+                                             <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                            2.
+                                             </label>
+                                             <x-input type="text" class="w-full">
+                                             </x-input>  </div>
+                                     </div>
+
+                                        <div class="w-full lg:w-4/12 px-4">
+                                         <div class="relative w-full mb-3">
+                                             <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                            3.
+                                             </label>
+                                             <x-input type="text" class="w-full">
+                                             </x-input>  </div>
+                                     </div>
+                                    </div>
+
+
+
+                                    <p class="text-xs text-blueGray-400  mt-2 mb-2 px-4 font-bold uppercase">
+                                        Accidents Experience
+
+                                            </p>
+                                            <div class="flex flex-wrap">
+                                             <div class="w-full lg:w-1/2 px-4">
+                                                 <div class="relative w-full mb-3">
+                                                     <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                                    1.
+                                                     </label>
+                                                     <x-input type="text" class="w-full">
+                                                     </x-input>  </div>
+                                             </div>
+
+                                                <div class="w-full lg:w-1/2 px-4">
+                                                 <div class="relative w-full mb-3">
+                                                     <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                                    2.
+                                                     </label>
+                                                     <x-input type="text" class="w-full">
+                                                     </x-input>  </div>
+                                             </div>
+
+
+                                            </div>
+
+
+
+
+                                            <p class="text-xs text-blueGray-400  mt-2 mb-2 px-4 font-bold uppercase">
+                                                Operations Experience
+
+                                                    </p>
+                                                    <div class="flex flex-wrap">
+                                                     <div class="w-full lg:w-1/2 px-4">
+                                                         <div class="relative w-full mb-3">
+                                                             <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                                            1.
+                                                             </label>
+                                                             <x-input type="text" class="w-full">
+                                                             </x-input>  </div>
+                                                     </div>
+
+                                                        <div class="w-full lg:w-1/2 px-4">
+                                                         <div class="relative w-full mb-3">
+                                                             <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                                            2.
+                                                             </label>
+                                                             <x-input type="text" class="w-full">
+                                                             </x-input>  </div>
+                                                     </div>
+
+
+                                                    </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<section class="p-6 mx-auto bg-blueGray-50">
+    <div class="w-full mx-auto mt-2">
+        <div
+            class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-100 border-0">
+            <div class="rounded-t bg-white mb-0 px-6 py-6 ">
+
+
+                <p class="text-xs text-blueGray-400  mt-2 mb-2 px-4 font-bold uppercase">
+                  Name some of your Academic and Extra-Curricular Awards
+                       </p>
+                       <div class="flex flex-wrap">
+                           <div class="w-full lg:w-1/2 px-4">
+                               <div class="relative w-full mb-3">
+                                   <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                      Name of Award
+                                   </label>
+                                   <x-input type="text" class="w-full">
+                                   </x-input>
+                               </div>
+                           </div>
+                           <div class="w-full lg:w-1/2 px-4">
+                               <div class="relative w-full mb-3">
+                                   <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                           Year Achieved
+                                   </label>
+                                   <x-input type="text" class="w-full">
+                                   </x-input>  </div>
+                           </div>
+
+                       </div>
+
+
+
+
+
+                         <div class="flex flex-wrap">
+                             <div class="w-full lg:w-1/2 px-4">
+                                 <div class="relative w-full mb-3">
+                                     <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                        Name of Award
+                                     </label>
+                                     <x-input type="text" class="w-full">
+                                     </x-input>
+                                 </div>
+                             </div>
+                             <div class="w-full lg:w-1/2 px-4">
+                                 <div class="relative w-full mb-3">
+                                     <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                             Year Achieved
+                                     </label>
+                                     <x-input type="text" class="w-full">
+                                     </x-input>  </div>
+                             </div>
+
+                         </div>
+
+
+
+
+
+                         <div class="flex flex-wrap">
+                             <div class="w-full lg:w-1/2 px-4">
+                                 <div class="relative w-full mb-3">
+                                     <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                        Name of Award
+                                     </label>
+                                     <x-input type="text" class="w-full">
+                                     </x-input>
+                                 </div>
+                             </div>
+                             <div class="w-full lg:w-1/2 px-4">
+                                 <div class="relative w-full mb-3">
+                                     <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                             Year Achieved
+                                     </label>
+                                     <x-input type="text" class="w-full">
+                                     </x-input>  </div>
+                             </div>
+
+                         </div>
+
+
+
+
+
+                                 <div class="flex flex-wrap">
+                                     <div class="w-full lg:w-4/12 px-4">
+                                         <div class="relative w-full mb-3">
+                                             <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                               What is your favorite subject/s:
+                                             </label>
+                                             <x-input type="text" class="w-full">
+                                             </x-input>
+                                         </div>
+                                     </div>
+                                     <div class="w-full lg:w-4/12 px-4">
+                                         <div class="relative w-full mb-3">
+                                             <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                             What subject do you find difficult
+                                             </label>
+                                             <x-input type="text" class="w-full">
+                                             </x-input>  </div>
+                                     </div>
+                                     <div class="w-full lg:w-4/12 px-4">
+                                        <div class="relative w-full mb-3">
+                                            <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                             What school organizations are you afiliated?
+                                            </label>
+                                            <x-input type="text" class="w-full">
+                                            </x-input>  </div>
+                                    </div>
+
+                                 </div>
+
+
+
+                                 <p class="text-xs text-blueGray-400  mt-4 mb-2 px-4 font-bold uppercase">
+                                    What do you plan to do after graduating Senior High School?
+
+                                       </p>
+                                       <div class="flex flex-wrap">
+                                           <div class="w-full lg:w-4/12 px-4">
+                                            <div class="flex">
+                                                <div class="flex items-center h-5">
+                                                    <input id="helper-checkbox" aria-describedby="helper-checkbox-text"
+                                                        type="checkbox" value=""
+                                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                                </div>
+                                                <div class="ml-2 text-sm">
+                                                    <label for="helper-checkbox" class="font-medium text-gray-900 ">Go to College</label>
+
+                                                </div>
+                                            </div>
+                                           </div>
+
+                                           <div class="w-full lg:w-4/12 px-4">
+                                            <div class="flex">
+                                                <div class="flex items-center h-5">
+                                                    <input id="helper-checkbox" aria-describedby="helper-checkbox-text"
+                                                        type="checkbox" value=""
+                                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                                </div>
+                                                <div class="ml-2 text-sm">
+                                                    <label for="helper-checkbox" class="font-medium text-gray-900 ">Work as a skilled worker</label>
+
+                                                </div>
+                                            </div>
+                                           </div>
+                                           <div class="w-full lg:w-4/12 px-4">
+                                            <div class="flex">
+                                                <div class="flex items-center h-5">
+                                                    <input id="helper-checkbox" aria-describedby="helper-checkbox-text"
+                                                        type="checkbox" value=""
+                                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                                </div>
+                                                <div class="ml-2 text-sm">
+                                                    <label for="helper-checkbox" class="font-medium text-gray-900 ">Pursue TESDA certificates</label>
+
+                                                </div>
+                                            </div>
+                                           </div>
+
+
+
+                                           <div class="w-full lg:w-4/12 px-4">
+                                            <div class="flex">
+                                                <div class="flex items-center h-5">
+                                                    <input id="helper-checkbox" aria-describedby="helper-checkbox-text"
+                                                        type="checkbox" value=""
+                                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                                </div>
+                                                <div class="ml-2 text-sm">
+                                                    <label for="helper-checkbox" class="font-medium text-gray-900 ">Engage in Business</label>
+
+                                                </div>
+                                            </div>
+                                           </div>
+
+
+
+                                           <div class="w-full lg:w-4/12 px-4">
+                                            <div class="flex">
+                                                <div class="flex items-center h-5">
+                                                    <input id="helper-checkbox" aria-describedby="helper-checkbox-text"
+                                                        type="checkbox" value=""
+                                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                                </div>
+                                                <div class="ml-2 text-sm">
+                                                    <label for="helper-checkbox" class="font-medium text-gray-900 ">Work to help parents</label>
+
+                                                </div>
+                                            </div>
+                                           </div>
+
+
+
+                                           <div class="w-full lg:w-4/12 px-4">
+                                            <div class="flex">
+                                                <div class="flex items-center h-5">
+                                                    <input id="helper-checkbox" aria-describedby="helper-checkbox-text"
+                                                        type="checkbox" value=""
+                                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                                </div>
+                                                <div class="ml-2 text-sm">
+                                                    <label for="helper-checkbox" class="font-medium text-gray-900 ">Undecided</label>
+
+                                                </div>
+                                            </div>
+                                           </div>
+
+
+
+                                       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
         @endsection
