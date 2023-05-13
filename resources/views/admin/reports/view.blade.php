@@ -40,6 +40,73 @@
                                 <x-input type="text" class="w-full">
                                 </x-input>  </div>
                         </div>
+
+                        <div class="w-full lg:w-4/12 px-4">
+                            <div class="relative w-full mb-3">
+                                <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                   Referred by
+                                </label>
+                                <x-input type="text" class="w-full">
+                                </x-input>  </div>
+                        </div>
+                    </div>
+
+                        <h6 class="text-blueGray-400 text-sm mt-3 mb-6 px-4 font-bold uppercase">
+                            Address
+                        </h6>
+                        <div class="flex flex-wrap">
+                            <div class="w-full lg:w-4/12 px-4">
+                                <div class="relative w-full mb-3">
+                                    <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                      Barangay
+                                    </label>
+                                    <x-input type="text" class="w-full">
+                                    </x-input>   </div>
+                            </div>
+
+                            <div class="w-full lg:w-4/12 px-4">
+                                <div class="relative w-full mb-3">
+                                    <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                      City
+                                    </label>
+                                    <x-input type="text" class="w-full">
+                                    </x-input>   </div>
+                            </div>
+
+                            <div class="w-full lg:w-4/12 px-4">
+                                <div class="relative w-full mb-3">
+                                    <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                       Province
+                                    </label>
+                                    <x-input type="text" class="w-full">
+                                    </x-input>   </div>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+
+
+
+
+                    <div class="flex flex-wrap">
+                        <div class="w-full lg:w-12/12 px-4">
+                            <div class="relative w-full mb-3">
+
+                                <h2 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Password
+                                    requirements:</h2>
+
+                            </div>
+                        </div>
+
                         <div class="w-full lg:w-4/12 px-4">
                             <div class="relative w-full mb-3">
                                 <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
@@ -50,7 +117,6 @@
                         </div>
 
 
-                    </div>
 
 
 
@@ -58,62 +124,7 @@
 
 
 
-
-                    <hr class="mt-6 border-b-1 border-blueGray-300">
-
-                    <h6 class="text-blueGray-400 text-sm mt-3 px-4 font-bold uppercase">
-                      Diciplinary Information
-                     </h6>
-                    <div class="flex flex-wrap">
-                        <div class="w-full lg:w-12/12 px-4">
-                            <div class="relative w-full mb-3">
-
-                                <h2 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Password
-                                    requirements:</h2>
-
-                            </div>
-                        </div>
-                        <div class="w-full lg:w-4/12 px-4">
-                            <div class="relative w-full mb-3">
-                                <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
-                                    Vialations
-                                </label>
-
-                                <div x-data="{ open: false }" class="relative">
-                                    <button @click.prevent="open = !open"
-                                        class="py-2 pl-3 pr-10 text-left w-full bg-white rounded-md shadow-md text-gray-700 font-medium hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500 focus:ring-opacity-50">
-                                        <span class="block truncate">Violations</span>
-                                        <span
-                                            class="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
-                                            <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                                <path fill-rule="evenodd"
-                                                    d="M5.293 7.707a1 1 0 011.414 0L10 11.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                                    clip-rule="evenodd" />
-                                            </svg>
-                                        </span>
-                                    </button>
-
-                                    <div x-show="open" @click.away="open = false"
-                                        class="absolute z-50 mt-3 w-full rounded-md bg-white shadow-lg">
-                                        <ul class="py-1">
-                                            <li><a href="#"
-                                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Option
-                                                    1</a></li>
-                                            <li><a href="#"
-                                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Option
-                                                    2</a></li>
-                                            <li><a href="#"
-                                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Option
-                                                    3</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-
-
-                            </div>
-                        </div>
+{{--
                         <div class="w-full lg:w-4/12 px-4">
                             <div class="relative w-full mb-3">
                                 <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
@@ -175,13 +186,13 @@
                                     </x-input>    </div>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
 
 
                     <hr class="mt-6 border-b-1 border-blueGray-300">
 
                     <h6 class="text-blueGray-400 text-sm mt-3 mb-6 px-4 font-bold ">
-                        Other Relevant Information
+                       Disiclinary Information
                     </h6>
                     <div class="flex flex-wrap">
 
@@ -211,14 +222,7 @@
                         </div>
                     </div>
                 </form>
-                <div class="flex justify-end  space-x-3 mt-6 ">
-                    <x-button>
-                        Accept
-                    </x-button>
-                    <x-button>
-                        Reject
-                    </x-button>
-                </div>
+
 
 
             </div>

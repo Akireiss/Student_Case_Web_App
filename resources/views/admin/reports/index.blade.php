@@ -84,8 +84,8 @@
                         <thead>
                             <tr class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
                             <th class="py-3 px-6 text-left">Name</th>
-                                <th class="py-3 px-6 text-left">Violations</th>
-                                <th class="py-3 px-6 text-center">Reporter</th>
+                                <th class="py-3 px-6 text-left">Behavour</th>
+                                <th class="py-3 px-6 text-center">Refference By</th>
                                 <th class="py-3 px-6 text-center">Status</th>
                                 <th class="py-3 px-6 text-center">Manage</th>
                                 <th class="py-3 px-6 text-center">Actions</th>
