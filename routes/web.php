@@ -40,7 +40,13 @@ Route::get('case/view', function () {
     return view('admin.student_case.view');
 });
 
+Route::get('usermanagement', function () {
+    return view('admin.user_management.index');
+});
 
+Route::get('settings/students', function () {
+    return view('admin.settings.students.index');
+});
 
 Route::get('redirects', 'App\Http\Controllers\LoginController@index');
 
@@ -60,15 +66,11 @@ Route::get('settings/rules', function () {
 Route::get('settings/grades', function () {
     return view('admin.settings.grades.index');
 });
-Route::get('settings/students', function () {
-    return view('admin.settings.students.index');
-});
+
 Route::get('report/view', function () {
     return view('admin.reports.view');
 });
-Route::get('usermanagement', function () {
-    return view('admin.user_management.index');
-});
+
 
 });
 

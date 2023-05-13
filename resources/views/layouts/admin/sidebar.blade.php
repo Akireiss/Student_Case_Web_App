@@ -136,9 +136,9 @@
 
 
 
-            <li class=" {{ (request()->is('admin/usermanagement'))  ? 'bg-green-700 w-1 ' : '' }} ">
+            <li class=" {{ (request()->is('usermanagement'))  ? 'bg-green-700 w-1 ' : '' }} ">
                 <a class="py-2.7 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
-                    href="{{ url('admin/usermanagement') }}">
+                    href="{{ url('usermanagement') }}">
                     <div
                         class="shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2.5">
                         <svg width="12px" height="12px" viewBox="0 0 46 42" version="1.1"
@@ -227,10 +227,15 @@
                             <p class=" leading-4 text-sm">Grades</p>
                         </a href>
                         @endif
-                        <a href="{{ url('admin/settings/students') }}" class="flex justify-start items-center space-x-3
+
+
+
+                        <a href="{{ url('settings/students') }}" class="flex justify-start items-center space-x-3
              text-black px-1 py-1  md:w-1">
                             <p class=" leading-4 text-sm">Students</p>
                         </a>
+
+
 
                         @if(auth()->check() && auth()->user()->role == 1)
                         <a href="{{ url('admin/settings/rules') }}" class="flex justify-start items-center space-x-3
