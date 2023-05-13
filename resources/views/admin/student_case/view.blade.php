@@ -632,16 +632,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
                     <hr class="mt-6 border-b-1 border-blueGray-300">
 
                     <p class="text-xs text-blueGray-400  mt-2 mb-2 px-4 font-bold uppercase">
@@ -763,7 +753,137 @@
                     </div>
 
 
-                    <hr class="mt-6 border-b-1 border-blueGray-300">
+
+
+                    <div class="flex flex-wrap mt-2">
+
+                        <div class="w-full lg:w-1/2 px-4">
+                            <div class="relative w-full mb-3">
+                                <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                    Guardians Name
+                                </label>
+                                <x-input type="text" class="w-full">
+                                </x-input>   </div>
+                        </div>
+                        <div class="w-full lg:w-1/2 px-4">
+                            <div class="relative w-full mb-3">
+                                <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                  Relationship with the Guardian
+                                </label>
+                                <x-input type="text" class="w-full">
+                                </x-input>      </div>
+                        </div>
+
+
+
+                        <div class="w-full lg:w-4/12 px-4">
+                            <div class="relative w-full mb-3">
+                                <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                  Contact Number
+                                </label>
+                                <x-input type="text" class="w-full">
+                                </x-input>
+                            </div>
+                        </div>
+
+
+
+                        <div class="w-full lg:w-4/12 px-4">
+                            <div class="relative w-full mb-3">
+                                <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                  Occupation
+                                </label>
+                                <x-input type="text" class="w-full">
+                                </x-input>
+                            </div>
+                        </div>
+
+
+                        <div class="w-full lg:w-4/12 px-4">
+                            <div class="relative w-full mb-3">
+                                <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                  Age
+                                </label>
+                                <x-input type="text" class="w-full">
+                                </x-input>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <p class="text-xs text-blueGray-400  mt-2 mb-2 px-4 font-bold uppercase">
+                      Address
+                         </p>
+                         <div class="flex flex-wrap">
+                             <div class="w-full lg:w-4/12 px-4">
+                                 <div class="relative w-full mb-3">
+                                     <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                        Barangay
+                                     </label>
+                                     <x-input type="text" class="w-full">
+                                     </x-input>
+                                 </div>
+                             </div>
+                             <div class="w-full lg:w-4/12 px-4">
+                                 <div class="relative w-full mb-3">
+                                     <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                             City
+                                     </label>
+                                     <x-input type="text" class="w-full">
+                                     </x-input>  </div>
+                             </div>
+                             <div class="w-full lg:w-4/12 px-4">
+                                 <div class="relative w-full mb-3">
+                                     <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                     Province
+                                     </label>
+                                     <x-input type="text" class="w-full">
+                                     </x-input>  </div>
+                             </div>
+                         </div>
+
+
+
+
+                         <h6 class="text-blueGray-400 text-sm mt-3 mb-6 px-4 font-bold ">
+                          Educational Background
+                        </h6>
+                        <div class="flex flex-wrap">
+
+                            <div class="w-full lg:w-4/12 px-4">
+                                <div class="relative w-full mb-3">
+                                    <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                        Community Services
+                                    </label>
+                                    <x-input type="text" class="w-full">
+                                    </x-input>   </div>
+                            </div>
+                            <div class="w-full lg:w-4/12 px-4">
+                                <div class="relative w-full mb-3">
+                                    <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                        Lorem
+                                    </label>
+                                    <x-input type="text" class="w-full">
+                                    </x-input>      </div>
+                            </div>
+                            <div class="w-full lg:w-4/12 px-4">
+                                <div class="relative w-full mb-3">
+                                    <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                        Schedule Meeting
+                                    </label>
+                                    <x-input type="date" class="w-full">
+                                    </x-input>    </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
 
                     <h6 class="text-blueGray-400 text-sm mt-3 mb-6 px-4 font-bold ">
                         Other Relevant Information
@@ -795,6 +915,15 @@
                                 </x-input>    </div>
                         </div>
                     </div>
+
+
+
+
+
+
+
+
+
                 </form>
             </div>
         </div>
