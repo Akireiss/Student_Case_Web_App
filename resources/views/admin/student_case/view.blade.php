@@ -847,15 +847,18 @@
 
 
 
-                         <h6 class="text-blueGray-400 text-sm mt-3 mb-6 px-4 font-bold ">
-                          Educational Background
-                        </h6>
+                         <h6 class="text-blueGray-400 text-sm mt-3 mb-6 px-4 font-bold uppercase">
+                       Educational Background
+                          </h6>
+                          <p class="text-xs text-blueGray-400  mt-2 mb-2 px-4 font-bold uppercase">
+                            Grade 5
+                               </p>
                         <div class="flex flex-wrap">
 
                             <div class="w-full lg:w-4/12 px-4">
                                 <div class="relative w-full mb-3">
                                     <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
-                                        Community Services
+                                        Name of School
                                     </label>
                                     <x-input type="text" class="w-full">
                                     </x-input>   </div>
@@ -863,7 +866,7 @@
                             <div class="w-full lg:w-4/12 px-4">
                                 <div class="relative w-full mb-3">
                                     <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
-                                        Lorem
+                                        School Year Attended
                                     </label>
                                     <x-input type="text" class="w-full">
                                     </x-input>      </div>
@@ -871,58 +874,522 @@
                             <div class="w-full lg:w-4/12 px-4">
                                 <div class="relative w-full mb-3">
                                     <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
-                                        Schedule Meeting
+                                        General Average
                                     </label>
-                                    <x-input type="date" class="w-full">
+                                    <x-input type="number" class="w-full">
                                     </x-input>    </div>
                             </div>
+
                         </div>
 
 
+                        <p class="text-xs text-blueGray-400  mt-2 mb-2 px-4 font-bold uppercase">
+                            Address
+                               </p>
+                               <div class="flex flex-wrap">
+                                   <div class="w-full lg:w-4/12 px-4">
+                                       <div class="relative w-full mb-3">
+                                           <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                              Barangay
+                                           </label>
+                                           <x-input type="text" class="w-full">
+                                           </x-input>
+                                       </div>
+                                   </div>
+                                   <div class="w-full lg:w-4/12 px-4">
+                                       <div class="relative w-full mb-3">
+                                           <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                                   City
+                                           </label>
+                                           <x-input type="text" class="w-full">
+                                           </x-input>  </div>
+                                   </div>
+                                   <div class="w-full lg:w-4/12 px-4">
+                                       <div class="relative w-full mb-3">
+                                           <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                           Province
+                                           </label>
+                                           <x-input type="text" class="w-full">
+                                           </x-input>  </div>
+                                   </div>
+                               </div>
+
+
+
+                               <p class="text-xs text-blueGray-400  mt-2 mb-2 px-4 font-bold uppercase">
+                                Grade 6
+                                   </p>
+                            <div class="flex flex-wrap">
+
+                                <div class="w-full lg:w-4/12 px-4">
+                                    <div class="relative w-full mb-3">
+                                        <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                            Name of School
+                                        </label>
+                                        <x-input type="text" class="w-full">
+                                        </x-input>   </div>
+                                </div>
+                                <div class="w-full lg:w-4/12 px-4">
+                                    <div class="relative w-full mb-3">
+                                        <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                            School Year Attended
+                                        </label>
+                                        <x-input type="text" class="w-full">
+                                        </x-input>      </div>
+                                </div>
+                                <div class="w-full lg:w-4/12 px-4">
+                                    <div class="relative w-full mb-3">
+                                        <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                            General Average
+                                        </label>
+                                        <x-input type="number" class="w-full">
+                                        </x-input>    </div>
+                                </div>
+
+                            </div>
+
+
+                            <p class="text-xs text-blueGray-400  mt-2 mb-2 px-4 font-bold uppercase">
+                                Address
+                                   </p>
+                                   <div class="flex flex-wrap">
+                                       <div class="w-full lg:w-4/12 px-4">
+                                           <div class="relative w-full mb-3">
+                                               <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                                  Barangay
+                                               </label>
+                                               <x-input type="text" class="w-full">
+                                               </x-input>
+                                           </div>
+                                       </div>
+                                       <div class="w-full lg:w-4/12 px-4">
+                                           <div class="relative w-full mb-3">
+                                               <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                                       City
+                                               </label>
+                                               <x-input type="text" class="w-full">
+                                               </x-input>  </div>
+                                       </div>
+                                       <div class="w-full lg:w-4/12 px-4">
+                                           <div class="relative w-full mb-3">
+                                               <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                               Province
+                                               </label>
+                                               <x-input type="text" class="w-full">
+                                               </x-input>  </div>
+                                       </div>
+                                   </div>
+
+
+
+
+
+                                   <p class="text-xs text-blueGray-400  mt-2 mb-2 px-4 font-bold uppercase">
+                                    Grade 7
+                                       </p>
+                                <div class="flex flex-wrap">
+
+                                    <div class="w-full lg:w-4/12 px-4">
+                                        <div class="relative w-full mb-3">
+                                            <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                                Name of School
+                                            </label>
+                                            <x-input type="text" class="w-full">
+                                            </x-input>   </div>
+                                    </div>
+                                    <div class="w-full lg:w-4/12 px-4">
+                                        <div class="relative w-full mb-3">
+                                            <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                                School Year Attended
+                                            </label>
+                                            <x-input type="text" class="w-full">
+                                            </x-input>      </div>
+                                    </div>
+                                    <div class="w-full lg:w-4/12 px-4">
+                                        <div class="relative w-full mb-3">
+                                            <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                                General Average
+                                            </label>
+                                            <x-input type="number" class="w-full">
+                                            </x-input>    </div>
+                                    </div>
+
+                                </div>
+
+
+                                <p class="text-xs text-blueGray-400  mt-2 mb-2 px-4 font-bold uppercase">
+                                    Address
+                                       </p>
+                                       <div class="flex flex-wrap">
+                                           <div class="w-full lg:w-4/12 px-4">
+                                               <div class="relative w-full mb-3">
+                                                   <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                                      Barangay
+                                                   </label>
+                                                   <x-input type="text" class="w-full">
+                                                   </x-input>
+                                               </div>
+                                           </div>
+                                           <div class="w-full lg:w-4/12 px-4">
+                                               <div class="relative w-full mb-3">
+                                                   <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                                           City
+                                                   </label>
+                                                   <x-input type="text" class="w-full">
+                                                   </x-input>  </div>
+                                           </div>
+                                           <div class="w-full lg:w-4/12 px-4">
+                                               <div class="relative w-full mb-3">
+                                                   <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                                   Province
+                                                   </label>
+                                                   <x-input type="text" class="w-full">
+                                                   </x-input>  </div>
+                                           </div>
+                                       </div>
+
+
+
+
+
+                                       <p class="text-xs text-blueGray-400  mt-2 mb-2 px-4 font-bold uppercase">
+                                        Grade 8
+                                           </p>
+                                    <div class="flex flex-wrap">
+
+                                        <div class="w-full lg:w-4/12 px-4">
+                                            <div class="relative w-full mb-3">
+                                                <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                                    Name of School
+                                                </label>
+                                                <x-input type="text" class="w-full">
+                                                </x-input>   </div>
+                                        </div>
+                                        <div class="w-full lg:w-4/12 px-4">
+                                            <div class="relative w-full mb-3">
+                                                <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                                    School Year Attended
+                                                </label>
+                                                <x-input type="text" class="w-full">
+                                                </x-input>      </div>
+                                        </div>
+                                        <div class="w-full lg:w-4/12 px-4">
+                                            <div class="relative w-full mb-3">
+                                                <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                                    General Average
+                                                </label>
+                                                <x-input type="number" class="w-full">
+                                                </x-input>    </div>
+                                        </div>
+
+                                    </div>
+
+
+                                    <p class="text-xs text-blueGray-400  mt-2 mb-2 px-4 font-bold uppercase">
+                                        Address
+                                           </p>
+                                           <div class="flex flex-wrap">
+                                               <div class="w-full lg:w-4/12 px-4">
+                                                   <div class="relative w-full mb-3">
+                                                       <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                                          Barangay
+                                                       </label>
+                                                       <x-input type="text" class="w-full">
+                                                       </x-input>
+                                                   </div>
+                                               </div>
+                                               <div class="w-full lg:w-4/12 px-4">
+                                                   <div class="relative w-full mb-3">
+                                                       <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                                               City
+                                                       </label>
+                                                       <x-input type="text" class="w-full">
+                                                       </x-input>  </div>
+                                               </div>
+                                               <div class="w-full lg:w-4/12 px-4">
+                                                   <div class="relative w-full mb-3">
+                                                       <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                                       Province
+                                                       </label>
+                                                       <x-input type="text" class="w-full">
+                                                       </x-input>  </div>
+                                               </div>
+                                           </div>
+
+
+
+
+
+                                           <p class="text-xs text-blueGray-400  mt-2 mb-2 px-4 font-bold uppercase">
+                                            Grade 9
+                                               </p>
+                                        <div class="flex flex-wrap">
+
+                                            <div class="w-full lg:w-4/12 px-4">
+                                                <div class="relative w-full mb-3">
+                                                    <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                                        Name of School
+                                                    </label>
+                                                    <x-input type="text" class="w-full">
+                                                    </x-input>   </div>
+                                            </div>
+                                            <div class="w-full lg:w-4/12 px-4">
+                                                <div class="relative w-full mb-3">
+                                                    <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                                        School Year Attended
+                                                    </label>
+                                                    <x-input type="text" class="w-full">
+                                                    </x-input>      </div>
+                                            </div>
+                                            <div class="w-full lg:w-4/12 px-4">
+                                                <div class="relative w-full mb-3">
+                                                    <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                                        General Average
+                                                    </label>
+                                                    <x-input type="number" class="w-full">
+                                                    </x-input>    </div>
+                                            </div>
+
+                                        </div>
+
+
+                                        <p class="text-xs text-blueGray-400  mt-2 mb-2 px-4 font-bold uppercase">
+                                            Address
+                                               </p>
+                                               <div class="flex flex-wrap">
+                                                   <div class="w-full lg:w-4/12 px-4">
+                                                       <div class="relative w-full mb-3">
+                                                           <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                                              Barangay
+                                                           </label>
+                                                           <x-input type="text" class="w-full">
+                                                           </x-input>
+                                                       </div>
+                                                   </div>
+                                                   <div class="w-full lg:w-4/12 px-4">
+                                                       <div class="relative w-full mb-3">
+                                                           <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                                                   City
+                                                           </label>
+                                                           <x-input type="text" class="w-full">
+                                                           </x-input>  </div>
+                                                   </div>
+                                                   <div class="w-full lg:w-4/12 px-4">
+                                                       <div class="relative w-full mb-3">
+                                                           <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                                           Province
+                                                           </label>
+                                                           <x-input type="text" class="w-full">
+                                                           </x-input>  </div>
+                                                   </div>
+                                               </div>
 
 
 
 
 
 
-                    <h6 class="text-blueGray-400 text-sm mt-3 mb-6 px-4 font-bold ">
-                        Other Relevant Information
-                    </h6>
-                    <div class="flex flex-wrap">
+                                               <p class="text-xs text-blueGray-400  mt-2 mb-2 px-4 font-bold uppercase">
+                                                Grade 10
+                                                   </p>
+                                            <div class="flex flex-wrap">
 
-                        <div class="w-full lg:w-4/12 px-4">
-                            <div class="relative w-full mb-3">
-                                <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
-                                    Community Services
-                                </label>
-                                <x-input type="text" class="w-full">
-                                </x-input>   </div>
-                        </div>
-                        <div class="w-full lg:w-4/12 px-4">
-                            <div class="relative w-full mb-3">
-                                <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
-                                    Lorem
-                                </label>
-                                <x-input type="text" class="w-full">
-                                </x-input>      </div>
-                        </div>
-                        <div class="w-full lg:w-4/12 px-4">
-                            <div class="relative w-full mb-3">
-                                <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
-                                    Schedule Meeting
-                                </label>
-                                <x-input type="date" class="w-full">
-                                </x-input>    </div>
-                        </div>
-                    </div>
+                                                <div class="w-full lg:w-4/12 px-4">
+                                                    <div class="relative w-full mb-3">
+                                                        <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                                            Name of School
+                                                        </label>
+                                                        <x-input type="text" class="w-full">
+                                                        </x-input>   </div>
+                                                </div>
+                                                <div class="w-full lg:w-4/12 px-4">
+                                                    <div class="relative w-full mb-3">
+                                                        <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                                            School Year Attended
+                                                        </label>
+                                                        <x-input type="text" class="w-full">
+                                                        </x-input>      </div>
+                                                </div>
+                                                <div class="w-full lg:w-4/12 px-4">
+                                                    <div class="relative w-full mb-3">
+                                                        <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                                            General Average
+                                                        </label>
+                                                        <x-input type="number" class="w-full">
+                                                        </x-input>    </div>
+                                                </div>
 
-
-
+                                            </div>
 
 
+                                            <p class="text-xs text-blueGray-400  mt-2 mb-2 px-4 font-bold uppercase">
+                                                Address
+                                                   </p>
+                                                   <div class="flex flex-wrap">
+                                                       <div class="w-full lg:w-4/12 px-4">
+                                                           <div class="relative w-full mb-3">
+                                                               <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                                                  Barangay
+                                                               </label>
+                                                               <x-input type="text" class="w-full">
+                                                               </x-input>
+                                                           </div>
+                                                       </div>
+                                                       <div class="w-full lg:w-4/12 px-4">
+                                                           <div class="relative w-full mb-3">
+                                                               <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                                                       City
+                                                               </label>
+                                                               <x-input type="text" class="w-full">
+                                                               </x-input>  </div>
+                                                       </div>
+                                                       <div class="w-full lg:w-4/12 px-4">
+                                                           <div class="relative w-full mb-3">
+                                                               <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                                               Province
+                                                               </label>
+                                                               <x-input type="text" class="w-full">
+                                                               </x-input>  </div>
+                                                       </div>
+                                                   </div>
 
 
 
+
+
+
+                                           <p class="text-xs text-blueGray-400  mt-2 mb-2 px-4 font-bold uppercase">
+                                            Grade 11
+                                               </p>
+                                        <div class="flex flex-wrap">
+
+                                            <div class="w-full lg:w-4/12 px-4">
+                                                <div class="relative w-full mb-3">
+                                                    <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                                        Name of School
+                                                    </label>
+                                                    <x-input type="text" class="w-full">
+                                                    </x-input>   </div>
+                                            </div>
+                                            <div class="w-full lg:w-4/12 px-4">
+                                                <div class="relative w-full mb-3">
+                                                    <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                                        School Year Attended
+                                                    </label>
+                                                    <x-input type="text" class="w-full">
+                                                    </x-input>      </div>
+                                            </div>
+                                            <div class="w-full lg:w-4/12 px-4">
+                                                <div class="relative w-full mb-3">
+                                                    <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                                        General Average
+                                                    </label>
+                                                    <x-input type="number" class="w-full">
+                                                    </x-input>    </div>
+                                            </div>
+
+                                        </div>
+
+
+                                        <p class="text-xs text-blueGray-400  mt-2 mb-2 px-4 font-bold uppercase">
+                                            Address
+                                               </p>
+                                               <div class="flex flex-wrap">
+                                                   <div class="w-full lg:w-4/12 px-4">
+                                                       <div class="relative w-full mb-3">
+                                                           <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                                              Barangay
+                                                           </label>
+                                                           <x-input type="text" class="w-full">
+                                                           </x-input>
+                                                       </div>
+                                                   </div>
+                                                   <div class="w-full lg:w-4/12 px-4">
+                                                       <div class="relative w-full mb-3">
+                                                           <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                                                   City
+                                                           </label>
+                                                           <x-input type="text" class="w-full">
+                                                           </x-input>  </div>
+                                                   </div>
+                                                   <div class="w-full lg:w-4/12 px-4">
+                                                       <div class="relative w-full mb-3">
+                                                           <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                                           Province
+                                                           </label>
+                                                           <x-input type="text" class="w-full">
+                                                           </x-input>  </div>
+                                                   </div>
+                                               </div>
+
+
+
+
+
+
+                                           <p class="text-xs text-blueGray-400  mt-2 mb-2 px-4 font-bold uppercase">
+                                            Grade 12
+                                               </p>
+                                        <div class="flex flex-wrap">
+
+                                            <div class="w-full lg:w-4/12 px-4">
+                                                <div class="relative w-full mb-3">
+                                                    <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                                        Name of School
+                                                    </label>
+                                                    <x-input type="text" class="w-full">
+                                                    </x-input>   </div>
+                                            </div>
+                                            <div class="w-full lg:w-4/12 px-4">
+                                                <div class="relative w-full mb-3">
+                                                    <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                                        School Year Attended
+                                                    </label>
+                                                    <x-input type="text" class="w-full">
+                                                    </x-input>      </div>
+                                            </div>
+                                            <div class="w-full lg:w-4/12 px-4">
+                                                <div class="relative w-full mb-3">
+                                                    <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                                        General Average
+                                                    </label>
+                                                    <x-input type="number" class="w-full">
+                                                    </x-input>    </div>
+                                            </div>
+
+                                        </div>
+
+
+                                        <p class="text-xs text-blueGray-400  mt-2 mb-2 px-4 font-bold uppercase">
+                                            Address
+                                               </p>
+                                               <div class="flex flex-wrap">
+                                                   <div class="w-full lg:w-4/12 px-4">
+                                                       <div class="relative w-full mb-3">
+                                                           <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                                              Barangay
+                                                           </label>
+                                                           <x-input type="text" class="w-full">
+                                                           </x-input>
+                                                       </div>
+                                                   </div>
+                                                   <div class="w-full lg:w-4/12 px-4">
+                                                       <div class="relative w-full mb-3">
+                                                           <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                                                   City
+                                                           </label>
+                                                           <x-input type="text" class="w-full">
+                                                           </x-input>  </div>
+                                                   </div>
+                                                   <div class="w-full lg:w-4/12 px-4">
+                                                       <div class="relative w-full mb-3">
+                                                           <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                                                           Province
+                                                           </label>
+                                                           <x-input type="text" class="w-full">
+                                                           </x-input>  </div>
+                                                   </div>
+                                               </div>
 
                 </form>
             </div>
