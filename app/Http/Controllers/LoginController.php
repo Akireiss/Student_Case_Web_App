@@ -11,9 +11,16 @@ class LoginController extends Controller
         $role=Auth::user()->role;
         if($role == 1){
            return view('admin.dashboard.dashboard');
-        }else
+        }else if($role == 0)
         {
            return view('staff.students.dashboard');
+        }
+        else if($role == 2)
+        {
+           return view('dashboard');
         };
-   }
-}
+
+
+
+    }
+    }
