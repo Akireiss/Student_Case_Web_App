@@ -84,7 +84,7 @@
                         <thead class="">
                             <tr class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
                                 <th class="py-3 px-6 text-left">Name</th>
-                               <th class="py-3 px-6 text-left">Total Violations</th>
+                               <th class="py-3 px-6 text-left">Recent Behavior</th>
                                 <th class="py-3 px-6 text-center">Actions Taken</th>
                                 <th class="py-3 px-6 text-center">Status</th>
                                 <th class="py-3 px-6 text-center">Actions</th>
@@ -100,8 +100,7 @@
                                 </td>
                                 <td class="py-3 px-6 text-left">
                                     <div class="flex items-center">
-
-                                        <span>3</span>
+Bullying
                                     </div>
                                 </td>
                                 <td class="py-3 px-6 text-center">
