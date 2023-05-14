@@ -8,7 +8,9 @@
 
     <div class="px-6 md:px-10 py-4 md:py-2">
         <div class="flex items-center justify-between">
-            <p tabindex="0" class="focus:outline-none text-base sm:text-lg md:text-xl lg:text-3xl font-bold leading-normal text-gray-800 dark:text-white">Rules And Regulations</p>
+            <p tabindex="0" class="focus:outline-none text-base sm:text-lg md:text-xl lg:text-3xl font-bold leading-normal text-gray-800 dark:text-white">
+                Behavior
+            </p>
             <div class="py-3 px-4 flex items-center text-sm font-medium leading-none cursor-pointer rounded">
 <button class="bg-green-400 hover:bg-green-500 shadow-sm px-4 py-2">
     Add
@@ -73,7 +75,7 @@
                             <tr class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
                                 <th class="py-3 px-6 text-left">Name</th>
                                 <th class="py-3 px-6 text-left">Description</th>
-
+                                <th class="py-3 px-6 text-center">Category</th>
                                 <th class="py-3 px-6 text-center">Status</th>
                                 <th class="py-3 px-6 text-center">Actions</th>
                             </tr>
@@ -92,6 +94,10 @@
                                 <td class="py-3 px-6 text-center">
                                   Bullying
                                 </td>
+
+                                <td class="py-3 px-6 text-center">
+                                Grave Offense
+                                  </td>
                                 <td class="py-3 px-6 text-center">
                                     <span class="bg-green-500 text-white py-1 px-3 rounded-full text-xs">Active</span>
                                 </td>

@@ -75,6 +75,7 @@
                         <tr class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
                             <th class="py-3 px-6 text-left">Grade</th>
                             <th class="py-3 px-6 text-left">Section</th>
+                            <th class="py-3 px-6 text-left">Adviser</th>
 
                             <th class="py-3 px-6 text-center">Status</th>
                             <th class="py-3 px-6 text-center">Actions</th>
@@ -91,9 +92,14 @@
                                 </div>
                             </td>
 
-                            <td class="py-3 px-6 text-center">
+                            <td class="py-3 px-6 text-left">
                               Bullying
                             </td>
+
+
+                            <td class="py-3 px-6 text-left">
+                                Reiss Mei
+                              </td>
                             <td class="py-3 px-6 text-center">
                                 <span class="bg-green-500 text-white py-1 px-3 rounded-full text-xs">Active</span>
                             </td>
