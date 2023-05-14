@@ -8,22 +8,14 @@
         </h1>
 
         <p class="mt-6 text-gray-500 leading-relaxed">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, sint tempore consectetur quia
-            laboriosam recusandae. Quasi eius distinctio sint reiciendis atque quo perspiciatis, nemo assumenda,
-            in deserunt totam dignissimos laboriosam?
+            Please provide the following information for the student being referred:
         </p>
     </div>
     <div class="w-full mx-auto mt-6">
         <div
             class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-100 border-0">
             <div class="rounded-t bg-white mb-0 px-6 py-6 ">
-                <div class="text-center flex justify-between">
-                    <h6 class="text-blueGray-700 text-xl font-bold px-4">
-                        Personal Profile
-                    </h6>
 
-
-                </div>
             </div>
             <div class="flex-auto px-6 lg:px-10 py-10 pt-0 ">
                 <form>
@@ -41,9 +33,7 @@
 
                             <label for="input" class="text-gray-700 font-bold mb-2">Student Name:</label>
                             <livewire:user.report />
-
-
-                            <p class="text-xs text-gray-400 mt-1">Please choose students name to report</p>
+                            <p class="text-xs text-gray-400 ">Please choose students name to report</p>
 
 
 
@@ -56,7 +46,7 @@
                         <div class="w-full lg:w-4/12 px-4">
 
                             <div x-data="{ open: false, selected: '' }" class="relative">
-    <label for="input" class="text-gray-700 font-bold mb-2">Students Behavior:</label>
+    <label for="input" class="text-gray-700 font-bold mb-2">Grade</label>
     <div class="relative">
       <button x-on:click="open = !open; $event.preventDefault()"
         href="#"
@@ -73,48 +63,88 @@
       <ul class="max-h-60 rounded-md py-1 text-base leading-6 shadow-xs overflow-au text-black to focus:outline-none sm:text-sm sm:leading-5">
         <li x-on:click="selected = 'Bullying'; open = false;" class="cursor-pointer text-black select-none relative py-2 pl-3 pr-9 hover:bg-gray-100 text-black">
           <span x-text="selected !== '' ? selected : 'Select an option'" class="block truncate text-black"></span>
-          Bullying
+          Grade 7
         </li>
         <li x-on:click="selected = 'Harassment'; open = false;" class="cursor-pointer text-black select-none relative py-2 pl-3 pr-9 hover:bg-gray-100 text-black">
-          Harassment
+          Grade 8
         </li>
         <li x-on:click="selected = 'Cutting Classes'; open = false;" class="cursor-pointer text-black select-none relative py-2 pl-3 pr-9 hover:bg-gray-100 text-black">
           <span x-text="selected === 'Option 3' ? '✓' : ''" class="absolute inset-y-0 left-0 flex items-center pl-3 text-blue-600"></span>
-          Cutting Classes
+          Grade 9
         </li>
       </ul>
     </div>
-    <p class="text-xs text-gray-400 mt-1">Please choose the type of behavior</p>
+    <p class="text-xs text-gray-400 mt-1">Student Grade</p>
   </div>
 
 
                           </div>
 
 
+
                         <div class="w-full lg:w-4/12 px-4">
+
+                            <label for="input" class="text-gray-700 font-bold mb-1">Reffered by:</label>
+                            <livewire:user.report />
+                            <p class="text-xs text-gray-400">Please choose your name</p>
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                    <h6 class="text-blueGray-400 text-sm mt-5 mb-2 px-4 font-bold uppercase">
+                       Anecdotal Record
+                    </h6>
+                    <div class="flex flex-wrap">
+
+                        <div class="w-full lg:w-1/2 px-4">
                             <div class="relative w-full mb-3">
-                                <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
-                                    Middle Name
-                                </label>
-                                <x-input type="text" class="w-full">
-                                </x-input>  </div>
+                                <label for="input" class="
+                                text-gray-700 font-bold mb-2">Grave Offense</label>
+                                <select type="text" class="w-full border-gray-300 focus:border-green-500 focus:ring-green-500 rounded-md shadow-sm">
+                                    <option value="">Select Option</option>
+                                    <option value="">Gross Misconduct</option>
+                                <option value="">Cheating And Stealing</option>
+                                <option value="">Assaulting</option>
+                                <option value="">None</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="w-full lg:w-1/2 px-4">
+                            <div class="relative w-full mb-3">
+                                <label for="input" class="
+                                text-gray-700 font-bold mb-2">Minor Offense</label>
+                                <select type="text" class="w-full border-gray-300 focus:border-green-500 focus:ring-green-500 rounded-md shadow-sm">
+                                    <option value="">Select Option</option>
+                                    <option value="">Cutting Classes</option>
+                                <option value="">Failure to wear prescribed uniform</option>
+                                <option value="">Using profane language</option>
+                                <option value="">None</option>
+                                </select>
+                            </div>
                         </div>
 
 
+
                         <div class="w-full lg:w-4/12 px-4">
                             <div class="relative w-full mb-3">
-                                <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
-                                 Suffix
-                                </label>
+                                <label for="input" class="text-gray-700 font-bold mb-2">Oberservation</label>
                                 <x-input type="text" class="w-full">
                                 </x-input>
                             </div>
                         </div>
                         <div class="w-full lg:w-4/12 px-4">
                             <div class="relative w-full mb-3">
-                                <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
-                                    Nickname
-                                </label>
+                                <label for="input" class="text-gray-700 font-bold mb-2">Desired Behavior</label>
                                 <x-input type="text" class="w-full">
                                 </x-input>  </div>
                         </div>
@@ -122,9 +152,7 @@
 
                         <div class="w-full lg:w-4/12 px-4">
                             <div class="relative w-full mb-3">
-                                <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
-                                    Age
-                                </label>
+                                <label for="input" class="text-gray-700 font-bold mb-2">Outcome</label>
                                 <x-input type="text" class="w-full">
                                 </x-input>
                             </div>
@@ -150,13 +178,12 @@
 
 
 
-
                         <h6 class="text-blueGray-400 text-sm mt-3 mb-6 px-4 font-bold uppercase">
                             Interventions Tried
                         </h6>
                         <div class="flex flex-wrap">
 
-                             <div class="w-full lg:w-1/5 px-2">
+                             <div class="w-full lg:w-4/12 px-2">
                                  <div class="relative w-full mb-3">
 
                                      <div class="flex">
@@ -176,7 +203,7 @@
                              </div>
 
 
-                             <div class="w-full lg:w-1/5 px-2">
+                             <div class="w-full lg:w-4/12 px-2">
                                 <div class="relative w-full mb-3">
 
                                     <div class="flex">
@@ -195,7 +222,7 @@
                                 </div>
                             </div>
 
-                            <div class="w-full lg:w-1/5 px-2">
+                            <div class="w-full lg:w-4/12 px-2">
                                 <div class="relative w-full mb-3">
 
                                     <div class="flex">
@@ -220,7 +247,7 @@
 
 
 
-                             <div class="w-full lg:w-1/5 px-2">
+                             <div class="w-full lg:w-4/12 px-2">
                                 <div class="relative w-full mb-3">
 
                                     <div class="flex">
@@ -239,7 +266,7 @@
                                 </div>
                             </div>
 
-                            <div class="w-full lg:w-1/5 px-2">
+                            <div class="w-full lg:w-4/12 px-2">
                                 <div class="relative w-full mb-3">
 
                                     <div class="flex">
@@ -271,10 +298,9 @@
 
 
 
-
-
-
-
+<div class="flex justify-end mt-6">
+  <x-button>Submit</x-button>
+</div>
 
 
                     </div>

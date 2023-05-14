@@ -65,7 +65,22 @@
 
                             <div x-show="open" @click.away="open = false" class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                               <div class="py-1" role="none">
-                                <a  href="{{ route('dashboard') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Dashboard</a>
+
+
+                                <a  href="{{ route('dashboard') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                                 role="menuitem">Dashboard</a>
+
+                                {{-- @if(auth()->check() && auth()->user()->role == 0)
+                                <a  href="{{ route('dashboard') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                                role="menuitem">Dashboard</a>
+                                @endif --}}
+                                {{-- @if(auth()->check() && auth()->user()->role == 1)
+                                <a  href="{{ route('admin/dashboard') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                                role="menuitem">Dashboard</a>
+                                @endif --}}
+
+
+
                                 <a href="{{ route('profile.show') }}"  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Manage Account</a>
                                 <a  class="block px-4 py-2 text-sm text-red-700 hover:bg-red-100 hover:text-red-900" role="menuitem"
                                 href="{{ route('logout') }}" onclick="event.preventDefault();
