@@ -5,10 +5,10 @@ var ctx = document.getElementById("chart-bars").getContext("2d");
 new Chart(ctx, {
   type: "bar",
   data: {
-    labels: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    labels: ["Notify Parent", "Written Explanation", "Document Actin taken", "Teacher-parent-meeting", "Addminester Approate"],
     datasets: [
       {
-        label: "Violations",
+        label: "Interventions",
         tension: 0.4,
         borderWidth: 0,
         borderRadius: 4,
