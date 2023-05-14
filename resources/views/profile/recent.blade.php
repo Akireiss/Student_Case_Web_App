@@ -1,4 +1,5 @@
-<x-app-layout>
+@extends('layouts.app')
+@section('content')
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             {{ __('Dashboard') }}
@@ -39,15 +40,21 @@
                     <th class="px-6 py-3 font-bold tracking-normal text-left uppercase align-middle bg-transparent
                      border-b letter border-b-solid text-xs whitespace-nowrap border-b-gray-200 text-slate-400 opacity-70">Name</th>
                     <th class="px-6 py-3 pl-2 font-bold tracking-normal text-left uppercase align-middle
-                    bg-transparent border-b letter border-b-solid text-xs whitespace-nowrap border-b-gray-200 text-slate-400 opacity-70">Violation</th>
+                    bg-transparent border-b letter border-b-solid text-xs whitespace-nowrap border-b-gray-200 text-slate-400 opacity-70">
+                    Behavior</th>
                     <th class="px-6 py-3 pl-2 font-bold tracking-normal text-left uppercase align-middle
                     bg-transparent border-b letter border-b-solid text-xs whitespace-nowrap border-b-gray-200 text-slate-400 opacity-70">Date</th>
-                <th class="px-6 py-3 font-bold tracking-normal text-center uppercase align-middle bg-transparent border-b letter border-b-solid text-xs
+
+                    <th class="px-6 py-3 font-bold tracking-normal text-center uppercase align-middle bg-transparent border-b letter border-b-solid
+                    text-xs whitespace-nowrap border-b-gray-200 text-slate-400 opacity-70">Reffered By:</th>
+
+                    <th class="px-6 py-3 font-bold tracking-normal text-center uppercase align-middle bg-transparent border-b letter border-b-solid text-xs
                 whitespace-nowrap border-b-gray-200 text-slate-400 opacity-70">
             Status</th>
-                    <th class="px-6 py-3 font-bold tracking-normal text-center uppercase align-middle bg-transparent border-b letter border-b-solid
-                    text-xs whitespace-nowrap border-b-gray-200 text-slate-400 opacity-70">Reporter</th>
-                  </tr>
+            <th class="px-6 py-3 font-bold tracking-normal text-center uppercase align-middle bg-transparent border-b letter border-b-solid text-xs
+            whitespace-nowrap border-b-gray-200 text-slate-400 opacity-70">
+        Manage</th>
+  </tr>
 
 
 
@@ -61,11 +68,15 @@
                       </div>
                     </td>
                     <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap">
-                        <span class="font-semibold leading-tight text-xs"> Bullying</span>
+                        <span class="font-semibold leading-tight text-xs">Grosss Misconduct</span>
                     </td>
                     <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap">
                         <span class="font-semibold leading-tight text-xs"> Dec 12 2023</span>
                     </td>
+                    <td class="p-2 leading-normal text-center align-middle bg-transparent border-b text-sm whitespace-nowrap">
+                        <a href="javascript:;" class="font-semibold leading-tight text-xs text-slate-400"> Reiss </a>
+                      </td>
+
                     <td class="p-2 leading-normal text-center align-middle bg-transparent border-b text-sm whitespace-nowrap">
                       <span class="font-semibold leading-tight text-xs">
                         <span class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-green-500 text-white">Active</span>
@@ -73,8 +84,10 @@
                     </td>
 
                     <td class="p-2 leading-normal text-center align-middle bg-transparent border-b text-sm whitespace-nowrap">
-                        <a href="javascript:;" class="font-semibold leading-tight text-xs text-slate-400"> Edit </a>
+                        <a href="javascript:;" class="font-semibold leading-tight text-xs text-slate-400"> View</a>
                       </td>
+
+
                   </tr>
               </tbody>
             </table>
@@ -112,4 +125,4 @@
             </div>
         </div>
     </div>
-</x-app-layout>
+@endsection

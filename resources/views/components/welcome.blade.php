@@ -1,15 +1,26 @@
-
 <section class="p-6 mx-auto bg-blueGray-50">
     <div class="p-2 lg:p-2 ">
 
+        @if(auth()->check() && (auth()->user()->role == 2 || auth()->user()->role == 0))
+<h1 class="mt-8 text-2xl font-medium text-gray-900">
+Please Fill Up The Form
+</h1>
+@endif
 
-        <h1 class="mt-8 text-2xl font-medium text-gray-900">
-            Please Fill Up The Form
-        </h1>
+@if(auth()->check() && auth()->user()->role == 1)
+<h1 class="mt-8 text-2xl font-medium text-gray-900">
+    Case Information
+</h1>
+@endif
 
-        <p class="mt-6 text-gray-500 leading-relaxed">
+@if(auth()->check() && (auth()->user()->role == 2 || auth()->user()->role == 0))
+ <p class="mt-6 text-gray-500 leading-relaxed">
             Please provide the following information for the student being referred:
         </p>
+@endif
+
+
+
     </div>
     <div class="w-full mx-auto mt-6">
         <div
@@ -65,10 +76,10 @@
           <span x-text="selected !== '' ? selected : 'Select an option'" class="block truncate text-black"></span>
           Grade 7
         </li>
-        <li x-on:click="selected = 'Harassment'; open = false;" class="cursor-pointer text-black select-none relative py-2 pl-3 pr-9 hover:bg-gray-100 text-black">
+        <li x-on:click="selected = ''; open = false;" class="cursor-pointer text-black select-none relative py-2 pl-3 pr-9 hover:bg-gray-100 text-black">
           Grade 8
         </li>
-        <li x-on:click="selected = 'Cutting Classes'; open = false;" class="cursor-pointer text-black select-none relative py-2 pl-3 pr-9 hover:bg-gray-100 text-black">
+        <li x-on:click="selected = ''; open = false;" class="cursor-pointer text-black select-none relative py-2 pl-3 pr-9 hover:bg-gray-100 text-black">
           <span x-text="selected === 'Option 3' ? '✓' : ''" class="absolute inset-y-0 left-0 flex items-center pl-3 text-blue-600"></span>
           Grade 9
         </li>
@@ -111,7 +122,7 @@
                                 <label for="input" class="
                                 text-gray-700 font-bold mb-2">Grave Offense</label>
                                 <select type="text" class="w-full border-gray-300 focus:border-green-500 focus:ring-green-500 rounded-md shadow-sm">
-                                    <option value="">Select Option</option>
+                                    <option value="" >Select Option</option>
                                     <option value="">Gross Misconduct</option>
                                 <option value="">Cheating And Stealing</option>
                                 <option value="">Assaulting</option>

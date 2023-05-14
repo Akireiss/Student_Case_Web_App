@@ -84,10 +84,9 @@
                         <thead>
                             <tr class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
                             <th class="py-3 px-6 text-left">Name</th>
-                                <th class="py-3 px-6 text-left">Behavour</th>
+                                <th class="py-3 px-6 text-left">Behavior</th>
                                 <th class="py-3 px-6 text-center">Refference By</th>
                                 <th class="py-3 px-6 text-center">Status</th>
-                                <th class="py-3 px-6 text-center">Manage</th>
                                 <th class="py-3 px-6 text-center">Actions</th>
                             </tr>
                         </thead>
@@ -101,7 +100,7 @@
                                 <td class="py-3 px-6 text-left">
                                     <div class="flex items-center">
 
-                                        <span>Bullying</span>
+                                        <span>Gross Miscondduct</span>
                                     </div>
                                 </td>
                                 <td class="py-3 px-6 text-center">
@@ -110,10 +109,7 @@
                                 <td class="py-3 px-6 text-center">
                                     <span class="bg-green-400 text-white py-1 px-3 rounded-full text-xs">Active</span>
                                 </td>
-                                <td class="py-3 px-6 text-center">
-                                <span class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-green-500 text-white">Accept</span>
-                                <span class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-red-500 text-white">Reject</span>
-                                </td>
+
                                 <td class="py-3 px-6 text-center">
                                     <div class="flex item-center justify-center">
                                         <div class="w-4 mr-2 transform hover:text-purple-500 hover:scale-110">

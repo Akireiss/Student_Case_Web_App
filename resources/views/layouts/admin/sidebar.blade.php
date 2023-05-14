@@ -92,7 +92,6 @@
             <li class=" {{ (request()->is('staff/students'))  ? 'bg-green-700 w-1 ' : '' }} ">
                 @endif
 
-
                 @if(auth()->check() && auth()->user()->role == 1)
                 <a class="py-2.7 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
                 href="{{ url('admin/case') }}">

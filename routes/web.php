@@ -31,9 +31,7 @@ Route::middleware([
     })->name('dashboard');
 });
 
-Route::get('/recent', function () {
-    return view('profile.recent');
-});
+
 
 // Can access by the admin or teacher
 Route::get('case/view', function () {
@@ -47,6 +45,14 @@ Route::get('usermanagement', function () {
 Route::get('settings/students', function () {
     return view('admin.settings.students.index');
 });
+Route::get('/recent', function () {
+    return view('profile.recent');
+});
+
+
+
+
+
 
 Route::get('redirects', 'App\Http\Controllers\LoginController@index');
 

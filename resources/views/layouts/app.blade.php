@@ -31,7 +31,31 @@
                 <div class="flex flex-col -mx-6 lg:flex-row lg:items-center lg:mx-8">
 
 
+                    @if(auth()->check() && auth()->user()->role == 0)
+                    <a href="{{ url('dashboard') }}"
+                    class=" {{ (request()->is('dashboard'))  ? 'px-2 py-y mt-2 transition-colors duration-300
+                    transform rounded-full lg:mt-0 text-black
+                    hover:bg-green-600 hover:text-white bg-green-500' : '' }}
+                    hover:bg-green-500
+                    px-3 py-2  mt-2 transition-colors duration-300 transform rounded-full
+                    lg:mt-0 text-black  hover:text-white">
+                       Dashboard
+                    </a>
+                    @endif
 
+
+
+                    @if(auth()->check() && auth()->user()->role == 0)
+                    <a href="{{ url('recent') }}"
+                    class=" {{ (request()->is('recent'))  ? 'px-2 py-y mt-2 transition-colors duration-300
+                    transform rounded-full lg:mt-0 text-black
+                    hover:bg-green-600 hover:text-white bg-green-500' : '' }}
+                    hover:bg-green-500
+                    px-3 py-2  mt-2 transition-colors duration-300 transform rounded-full
+                    lg:mt-0 text-black  hover:text-white">
+                        Recent Report
+                    </a>
+@endif
                         @guest
                         @if (Route::has('login'))
                         <a href="{{ url('login') }}"
@@ -66,7 +90,6 @@
                             <div x-show="open" @click.away="open = false" class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                               <div class="py-1" role="none">
 
-
                                 <a  href="{{ route('dashboard') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
                                  role="menuitem">Dashboard</a>
 
@@ -78,8 +101,6 @@
                                 <a  href="{{ route('admin/dashboard') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
                                 role="menuitem">Dashboard</a>
                                 @endif --}}
-
-
 
                                 <a href="{{ route('profile.show') }}"  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Manage Account</a>
                                 <a  class="block px-4 py-2 text-sm text-red-700 hover:bg-red-100 hover:text-red-900" role="menuitem"
