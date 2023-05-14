@@ -102,7 +102,7 @@
             <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
                 Birthdate
             </label>
-            <x-input type="text" class="w-full">
+            <x-input type="date" class="w-full">
             </x-input>  </div>
     </div>
     <div class="w-full lg:w-4/12 px-4">
@@ -130,8 +130,10 @@
                                  <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
                                     Barangay
                                  </label>
-                                 <x-input type="text" class="w-full">
-                                 </x-input>
+                                 <select type="text" class="w-full border-gray-300 focus:border-green-500
+                                 focus:ring-green-500 rounded-md shadow-sm">
+                               <option value="">La Union</option>
+                                 </select>
                              </div>
                          </div>
                          <div class="w-full lg:w-4/12 px-4">
@@ -139,16 +141,20 @@
                                  <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
                                          City
                                  </label>
-                                 <x-input type="text" class="w-full">
-                                 </x-input>  </div>
+                                 <select type="text" class="w-full border-gray-300 focus:border-green-500
+                                 focus:ring-green-500 rounded-md shadow-sm">
+                               <option value="">Balaoan</option>
+                                 </select></div>
                          </div>
                          <div class="w-full lg:w-4/12 px-4">
                              <div class="relative w-full mb-3">
                                  <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
                                  Province
                                  </label>
-                                 <x-input type="text" class="w-full">
-                                 </x-input>  </div>
+                                 <select type="text" class="w-full border-gray-300 focus:border-green-500
+                                 focus:ring-green-500 rounded-md shadow-sm">
+                               <option value="">Butubut</option>
+                                 </select>  </div>
                          </div>
                      </div>
 
@@ -163,8 +169,11 @@
                                  <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
                                     Barangay
                                  </label>
-                                 <x-input type="text" class="w-full">
-                                 </x-input>
+                                 <select type="text" class="w-full border-gray-300 focus:border-green-500
+                                 focus:ring-green-500 rounded-md shadow-sm">
+                               <option value="">La Union</option>
+                               <option value="">Ilocos</option>
+                                 </select>
                              </div>
                          </div>
                          <div class="w-full lg:w-4/12 px-4">
@@ -172,16 +181,24 @@
                                  <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
                                          City
                                  </label>
-                                 <x-input type="text" class="w-full">
-                                 </x-input>  </div>
+                                 <select type="text" class="w-full border-gray-300 focus:border-green-500
+                                 focus:ring-green-500 rounded-md shadow-sm">
+                               <option value="">Balaoan</option>
+                               <option value="">Bacnotan</option>
+                               <option value="">Bangar</option>
+                                 </select> </div>
                          </div>
                          <div class="w-full lg:w-4/12 px-4">
                              <div class="relative w-full mb-3">
                                  <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
                                Province
                                  </label>
-                                 <x-input type="text" class="w-full">
-                                 </x-input>  </div>
+                                 <select type="text" class="w-full border-gray-300 focus:border-green-500
+                                 focus:ring-green-500 rounded-md shadow-sm">
+                               <option value="">Butubut</option>
+                               <option value="">Sur</option>
+                                 </select>
+                                  </div>
                          </div>
 
 
@@ -208,7 +225,7 @@
                                 <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
                                Number of Siblings
                                 </label>
-                                <x-input type="text" class="w-full">
+                                <x-input type="number" class="w-full">
                                 </x-input>  </div>
                         </div>
 
@@ -238,8 +255,18 @@
                                 <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
                              4p's Receipient
                                 </label>
-                                <x-input type="text" class="w-full">
-                                </x-input>  </div>
+                                <div class="flex">
+                                    <div class="flex items-center mr-4">
+                                        <input id="inline-radio" type="radio" value="" name="inline-radio-group" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label for="inline-radio" class="ml-2 text-sm font-medium text-black">Yes</label>
+                                    </div>
+                                    <div class="flex items-center mr-4">
+                                        <input id="inline-2-radio" type="radio" value="" name="inline-radio-group" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label for="inline-2-radio" class="ml-2 text-sm font-medium text-black">No</label>
+                                    </div>
+                                </div>
+
+</div>
                         </div>
 
                      </div>

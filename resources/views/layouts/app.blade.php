@@ -8,7 +8,7 @@
             <div class="flex items-center justify-between">
                 <div class="text-xl font-semibold text-gray-700">
                     <a class="text-2xl font-bold transition-colors duration-300 transform text-green-400 lg:text-3xl dark:hover:text-green-500"
-                        href="#">CZCMNHS</a>
+                        href="{{ url("/") }}">CZCMNHS</a>
                 </div>
 
                 <!-- Mobile menu button -->
