@@ -77,6 +77,10 @@ Route::get('report/view', function () {
     return view('admin.reports.view');
 });
 
+Route::get('user/add', function () {
+    return view('admin.account.index');
+});
+
 
 });
 
