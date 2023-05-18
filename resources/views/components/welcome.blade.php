@@ -57,7 +57,7 @@ Please Fill Up The Form
                         <div class="w-full lg:w-4/12 px-4">
 
                             <div x-data="{ open: false, selected: '' }" class="relative">
-    <label for="input" class="text-gray-700 font-bold mb-2">Grade</label>
+    <label for="input" class="text-gray-700 font-bold mb-2">Grade Level</label>
     <div x-data="{ open: false, selected: '' }" class="relative">
         <button x-on:click="open = !open" type="button"
           class="w-full py-2 pl-3 pr-10 text-left bg-white border border-gray-300 rounded-md shadow-sm transition duration-150 ease-in-out focus:outline-none focus:border-blue-300 focus:shadow-outline-blue sm:text-sm sm:leading-5">
@@ -98,7 +98,8 @@ Please Fill Up The Form
                         <div class="w-full lg:w-4/12 px-4">
 
                             <label for="input" class="text-gray-700 font-bold mb-1">Reffered by:</label>
-                            <livewire:user.report />
+                            <x-input type="text" class="w-full" value="Reiss Aki">
+                            </x-input>
                             <p class="text-xs text-gray-400">Please choose your name</p>
 
                         </div>
@@ -178,21 +179,8 @@ Please Fill Up The Form
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
                         <h6 class="text-blueGray-400 text-sm mt-3 mb-6 px-4 font-bold uppercase">
-                            Interventions Tried
+                       Actions Taken
                         </h6>
                         <div class="flex flex-wrap">
 
@@ -333,4 +321,58 @@ Please Fill Up The Form
             </div>
         </div>
     </div>
+</section>
+
+
+
+
+<section class="px-6 py-3 mx-auto bg-blueGray-50">
+<div class="w-full mx-auto mt-6">
+    <div
+        class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-100 border-0">
+        <div class="rounded-t bg-white mb-0 px-6 py-6 ">
+
+        </div>
+        <div class="flex-auto px-6 lg:px-10 py-10 pt-0 ">
+            <form>
+                <h6 class="text-blueGray-400 text-sm mt-3 mb-6 px-4 font-bold uppercase">
+                    Recent Behavior
+                </h6>
+                <div class="flex flex-wrap">
+
+                    <div class="w-full lg:w-1/2 px-4">
+
+
+
+
+
+
+                        <label for="input" class="text-gray-700 font-bold mb-2">Type of Behavior:</label>
+                        <x-input type="text" class="w-full">
+                        </x-input>
+
+
+                    </div>
+
+
+                    <div class="w-full lg:w-1/2 px-4">
+
+
+
+
+
+
+                        <label for="input" class="text-gray-700 font-bold mb-2">Date:</label>
+                        <x-input type="text" class="w-full">
+                        </x-input>
+
+
+                    </div>
+
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 </section>
