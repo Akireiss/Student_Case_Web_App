@@ -1,260 +1,4 @@
-@extends('layouts.admin.index')
-
-@section('content')
-
-<section class="p-6 mx-auto bg-blueGray-50">
-    <div class="w-full mx-auto mt-6">
-        <div
-            class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-100 border-0">
-
-
-            <div class="rounded-t bg-white mb-0 px-6 py-6 ">
-                <div class="text-center flex justify-between">
-                    <h6 class="text-blueGray-700 text-xl font-bold px-4">
-                       Anecdotal Record
-                    </h6>
-                    <div class="inline">
-                        <x-button>
-                            Edit
-                        </x-button>
-                    </div>
-
-                </div>
-            </div>
-            <div class="flex-auto px-6 lg:px-10 py-10 pt-0 ">
-                <form>
-                    <h6 class="text-blueGray-400 text-sm mt-3 mb-6 px-4 font-bold uppercase">
-                        Personal Information
-                    </h6>
-                    <div class="flex flex-wrap">
-
-                        <div class="w-full lg:w-4/12 px-4">
-                            <div class="relative w-full mb-3">
-                                <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
-                                    Last Name
-                                </label>
-                                <x-input type="text" class="w-full">
-                                </x-input>
-                            </div>
-                        </div>
-
-
-                        <div class="w-full lg:w-4/12 px-4">
-                            <div class="relative w-full mb-3">
-                                <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
-                                   First Name
-                                </label>
-                                <x-input type="text" class="w-full">
-                                </x-input>
-                            </div>
-                        </div>
-
-
-                        <div class="w-full lg:w-4/12 px-4">
-                            <div class="relative w-full mb-3">
-                                <label class="block  text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
-                                    Middlename
-                                </label>
-                                <x-input type="text" class="w-full">
-                                </x-input>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-
-                    <h6 class="text-blueGray-400 text-sm mt-3 mb-6 px-4 font-bold uppercase">
-                    Interventions Tried
-                    </h6>
-                    <div class="flex flex-wrap">
-                        @if(auth()->check() && auth()->user()->role == 2)
-                         <div class="w-full lg:w-4/12 px-2">
-                             <div class="relative w-full mb-3">
-
-                                 <div class="flex">
-                                     <div class="flex items-center h-5">
-                                         <input id="helper-checkbox" aria-describedby="helper-checkbox-text"
-                                             type="checkbox" value=""
-                                             class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                     </div>
-                                     <div class="ml-2 text-sm">
-                                         <label for="helper-checkbox" class="font-medium text-gray-900 ">
-                                            Teacher-student conference
-                                         </label>
-
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-
-@endif
-
-
-                        <div class="w-full lg:w-4/12 px-2">
-                            <div class="relative w-full mb-3">
-
-                                <div class="flex">
-                                    <div class="flex items-center h-5">
-                                        <input id="helper-checkbox" aria-describedby="helper-checkbox-text"
-                                            type="checkbox" value=""
-                                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                    </div>
-                                    <div class="ml-2 text-sm">
-                                        <label for="helper-checkbox" class="font-medium text-gray-900 ">
-                                        Notify Parent
-                                        </label>
-
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            </div>
-
-
-
-
-                            @if(auth()->check() && auth()->user()->role == 2)
-                         <div class="w-full lg:w-4/12 px-2">
-                            <div class="relative w-full mb-3">
-
-                                <div class="flex">
-                                    <div class="flex items-center h-5">
-                                        <input id="helper-checkbox" aria-describedby="helper-checkbox-text"
-                                            type="checkbox" value=""
-                                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                    </div>
-                                    <div class="ml-2 text-sm">
-                                        <label for="helper-checkbox" class="font-medium text-gray-900 ">
-                                           Written Explanation
-                                        </label>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        @endif
-
-                        @if(auth()->check() && auth()->user()->role == 2)
-                        <div class="w-full lg:w-4/12 px-2">
-                            <div class="relative w-full mb-3">
-
-                                <div class="flex">
-                                    <div class="flex items-center h-5">
-                                        <input id="helper-checkbox" aria-describedby="helper-checkbox-text"
-                                            type="checkbox" value=""
-                                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                    </div>
-                                    <div class="ml-2 text-sm">
-                                        <label for="helper-checkbox" class="font-medium text-gray-900 ">
-                                            Document Action Taken
-                                        </label>
-
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            </div>
-                            @endif
-
-
-                            @if(auth()->check() && auth()->user()->role == 1)
-                            <div class="w-full lg:w-4/12 px-2">
-                                <div class="relative w-full mb-3">
-
-                                    <div class="flex">
-                                        <div class="flex items-center h-5">
-                                            <input id="helper-checkbox" aria-describedby="helper-checkbox-text"
-                                                type="checkbox" value=""
-                                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                        </div>
-                                        <div class="ml-2 text-sm">
-                                            <label for="helper-checkbox" class="font-medium text-gray-900 ">
-                                                Parent-Teacher-Discipline Committe Conference
-                                            </label>
-
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                </div>
-
-@endif
-
-
-@if(auth()->check() && auth()->user()->role == 1)
-<div class="w-full lg:w-4/12 px-2">
-    <div class="relative w-full mb-3">
-
-        <div class="flex">
-            <div class="flex items-center h-5">
-                <input id="helper-checkbox" aria-describedby="helper-checkbox-text"
-                    type="checkbox" value=""
-                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-            </div>
-            <div class="ml-2 text-sm">
-                <label for="helper-checkbox" class="font-medium text-gray-900 ">
-                    Written Agreement
-                </label>
-
-            </div>
-        </div>
-
-    </div>
-
-    </div>
-
-@endif
-
-
-
-
-
-
-
-
-
-                    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@include('includes.header')
 <section class="p-6 mx-auto bg-blueGray-50">
     <div class="w-full mx-auto mt-6">
         <div
@@ -859,12 +603,12 @@
 
 
                     <p class="text-xs text-blueGray-400  mt-2 mb-2 px-4 font-bold uppercase">
-                        Parent are currently: (check which applies below)
+                       You are currently living with:
                     </p>
                     <div class="flex flex-wrap flex-col md:flex-row">
 
 
-                        <div class="w-full lg:w-1/5 px-2">
+                        <div class="w-full lg:w-1/5 px-4">
                             <div class="relative w-full mb-3">
 
                                 <div class="flex">
@@ -875,7 +619,7 @@
                                     </div>
                                     <div class="ml-2 text-sm">
                                         <label for="helper-checkbox" class="font-medium text-gray-900 ">
-                                            Living Together
+                                            both Parent
                                         </label>
 
                                     </div>
@@ -895,7 +639,7 @@
                                     </div>
                                     <div class="ml-2 text-sm">
                                         <label for="helper-checkbox" class="font-medium text-gray-900 ">
-                                            Living Together
+                                           Father Only
                                         </label>
 
                                     </div>
@@ -914,7 +658,7 @@
                                     </div>
                                     <div class="ml-2 text-sm">
                                         <label for="helper-checkbox" class="font-medium text-gray-900 ">
-                                            Living Together
+                                            Mother Only
                                         </label>
 
                                     </div>
@@ -934,7 +678,7 @@
                                     </div>
                                     <div class="ml-2 text-sm">
                                         <label for="helper-checkbox" class="font-medium text-gray-900 ">
-                                            Living Together
+                                            N/A
                                         </label>
 
                                     </div>
@@ -2281,13 +2025,4 @@
 
 
 
-
-
-
-
-
-
-
-
-
-@endsection
+@include('includes.footer')

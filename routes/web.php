@@ -85,6 +85,11 @@ Route::get('user/add', function () {
 });
 
 
+// Just a sample data
+Route::get('profile/info/view', function () {
+    return view('admin.student_case.info');
+});
+
 
 
 // Staff or Advisors
